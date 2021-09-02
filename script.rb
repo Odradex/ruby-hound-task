@@ -26,6 +26,8 @@ strange and mysterious things would soon be happening all over the
 country. Mr. Dursley hummed as he picked out his most boring tie for
 work, and Mrs. Dursley gossiped away happily as she wrestled a screaming
 Dudley into his high chair.'
+  module_function :number_to_word, :perform
+
   def perform
     text = ''
     puts('reading file')
@@ -36,14 +38,12 @@ Dudley into his high chair.'
     puts('sorted histogram:')
     puts(HistogramGenerator.sort_histogram(histogram))
   end
-  module_function :perform
 
   def number_to_word(number)
     'oops' unless number.in(1..9)
     words = %w[one two three four five six seven eight nine]
     words[number - 1]
   end
-  module_function :number_to_word
 end
 
 puts App.perform
