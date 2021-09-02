@@ -1,14 +1,6 @@
 Style/Documentation:
   Enabled: false
 
-Layout/LineLength:
+Metric/LineLength:
   Max: 120
-
-Layout:
   Enabled: true
-
-Style:
-  Enabled: true
-
-AllCops:
-  NewCops: enable
