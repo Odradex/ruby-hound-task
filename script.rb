@@ -7,11 +7,9 @@ class HistogramGenerator
     if string.empty?
       {}
     else
-
       string.gsub(/[ ,.\r\n]/, ' ').split.each_with_object(Hash.new(0)) do |word, result|
         result[word] += 1
       end
-
     end
   end
 
