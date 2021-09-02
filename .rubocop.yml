@@ -6,3 +6,9 @@ Layout/LineLength:
 
 Layout:
   Enabled: true
+
+Style:
+  Enabled: true
+
+AllCops:
+  NewCops: enable
